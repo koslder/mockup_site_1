@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GK Green Garden Center</title>
+    <style>
+        /* Herobanner */
+        * {
+            font-family: "Open Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        p, h1, h2, h3, h4, h5, h6, a, li, ul {
+            padding: 0;
+            margin: 0;    
+        }
+        
+        section.hero-banner {
+            background: linear-gradient(0deg, rgba(154, 230, 178, 1) 60%, rgba(0, 141, 167, 1) 100%);
+            
+        }
+        .logo img {
+            border-radius: 50px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-start;
+            gap: 30px;
+            padding: 10px;
+        }
+
+        .input input {
+            width: 600px;
+            height: 40px;
+            padding-left: 10px;
+            border: none;
+        }
+
+        .input button {
+            margin-left: 30px;
+            border: none;
+            height: 40px;
+            width: 157px;
+            background: white;
+            font-size: 17px;
+        }
+
+        .menu-list ul li {
+            list-style: none;
+        }
+        
+        .menu-list ul li a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        .menu-list ul {
+            display: flex;
+            justify-content: flex-start;
+            padding: 0;
+            gap: 10px;
+            font-size: 26px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .menu-title h1 {
+            font-size: 31px;
+        }
+
+        .main-img {
+            background-image: url(img/background-ggk.jpg);
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: center;
+            margin: 15px;
+        }
+        
+        .main-description p {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            width: 500px;
+        }
+
+        .main-description {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 50px;
+        }
+
+        .main-description a {
+            background-color: #ED1C24;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 45px;
+            font-size: 20px;
+            color: white;
+            font-weight: 700;
+            margin: 0 auto;
+            display: flex;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .textimage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .textimage img {
+            width: 130px;
+        }
+
+        
+        /* Herobanner end*/
+
+        /* About us */
+
+        .about-container .title h1 {
+            text-align: center;
+            font-size: 31px;
+            text-transform: uppercase;
+            font-weight: 800;
+            padding-top: 30px;
+        }
+
+        section.aboutus {
+            background-color: #F6D6D6;
+            padding-bottom: 50px;
+        }
+
+        .about-container .description {
+            margin: 0 50px;
+            background-color: #F6F7C4;
+            padding: 20px;
+        }
+
+        .about-container .description p {
+            font-size: 17px;
+            line-height: 1.4;
+        }
+
+        .paymentform h2 {
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: flex-start;
+            gap: 30px;
+            align-items: center;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+
+        .socials {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding-top: 20px;
+            font-size: 25px;
+        }
+
+        .socials img {
+            width: 50px;
+        }
+
+        .footer .contact h1 {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .parent-social {
+            display: flex;
+            gap: 100px;
+        }
+        .paymentform h2 a {
+            color: #0000FF;
+            font-weight: 500;
+        }
+        /* About us end*/
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<section class="hero-banner">
+    <div class="menu">
+        <div class="logo">
+            <img src="./img/gk-logo.png" alt="logo-site">
+        </div>
+        <div class="menu-content">
+            <div class="input">
+                <input type="text" placeholder="Search...">
+                <button>Call to action</button>
+            </div>
+            <div class="menu-list">
+                <ul>
+                    <li><a href="homepage.html">Home |</a></li>
+                    <li><a href="seemore.html">Product |</a></li>
+                    <li><a href="#">About us |</a></li>
+                    <li><a href="#">Contact us |</a></li>
+                    <li><a href="#">Payment</a></li>
+                </ul>
+            </div>
+            <div class="menu-title">
+                <h1>GK GREEN GARDEN CENTER</h1>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="main-img">
+            <!--  -->
+        </div>
+        <div class="main-description">
+            <div class="textimage">
+                <img src="./img/human.webp" alt="human">
+                <p>Welcome to GK Green Garden Center, your one-stop destination for all things green and growing! </p>
+            </div>
+            <!-- <button></button> -->
+            <a href="cart.html"><img src="./img/cart-logo.png" alt="">Buynow</a>
+        </div>
+    </div>
+</section>
+<!--  -->
+<section class="aboutus">
+    <div class="about-container">
+        <div class="title">
+            <h1>About us</h1>
+        </div>
+        <div class="description">
+            <p>GK Green Garden is a popular spot for plant enthusiasts in the neighborhood, offering a great selection of indoor and outdoor plants. Our shop is dedicated to sustainability and sources its plants and products ethically, supporting local farmers and environmentally conscious vendors. With the guidance of our experienced staff, customers can choose the perfect plants and receive professional advice on how to care for them. Whether you're looking to create a peaceful indoor retreat or a lush outdoor oasis, GK Green Garden has everything you need to bring your vision to life. Join us now on a journey of exploration and growth.</p>
+        </div>
+        <div class="paymentform">
+            <h2>FOR PAYMENT FORM: <a href="#">CLICK HERE!</a></h2>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo">
+            <img src="./img/gk-logo.png" alt="logo-site">
+        </div>
+        <div class="contact">
+            <h1>Contract Information:</h1>
+            <div class="parent-social">
+                <div class="social-col1">
+                    <div class="socials">
+                        <img src="./img/envelope.png" alt="envelope">
+                        <p>gkcenter@gmail.com</p>
+                    </div>
+                    <div class="socials">
+                        <img src="./img/phone.png" alt="phone">
+                        <p>09885039965<br>09168742661</p>
+                    </div>
+                </div>
+                <div class="social-col2">
+                    <div class="socials">
+                        <img src="./img/faceboook.png" alt="facebook">
+                        <p>GK Garden Center</p>
+                    </div>
+                    <div class="socials">
+                        <img src="./img/insta.png" alt="insta">
+                        <p>@gkgardencenterofficial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Open Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        p, h1, h2, h3, h4, h5, h6, a, li, ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+            color: black;
+        }
+        .header-menu {
+            background-color: #f4ede7;
+            padding: 20px;
+            border-bottom: 2px solid black;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .logo img {
+            border-radius: 50px;
+        }
+
+        .menu-list ul {
+            display: flex;
+            gap: 20px;
+            font-size: 20px;
+        }
+
+        .checkout-title {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .checkout-title h1 {
+            background-image: url(/img/text-background.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 270px;
+            text-align: center;
+            margin-top: 20px;
+            padding: 35px;
+        }
+
+        .checkout-title {
+            text-align: center;
+        }
+
+        .quantity {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .quantity p {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .quantity-input {
+            width: 50px;
+        }
+
+        .quantity p {
+            width: 100px;
+        }
+
+        .plant-container {
+            display: flex;
+            text-align: center;
+            gap: 30px;
+        }
+
+        .plant-container img {
+            width: 250px;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+
+        .checkout {
+            background-color: #F4EDE7;
+        }
+
+        .checkout-button {
+            background-image: url(/img/button-bg.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 180px;
+            height: 180px;
+            text-align: center;
+            padding-top: 11px;
+            margin-top: 30px;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 400px;
+            position: relative;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .back-btn,
+        .buy-btn,
+        .payment-option {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: none;
+            cursor: pointer;
+        }
+
+        .payment-method select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .total-amount {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .payment-options {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Adjust space between buttons as needed */
+        }
+
+    </style>
+</head>
+<body>
+    <section class="header-menu">
+        <div class="menu">
+            <div class="logo">
+                <img src="./img/gk-logo.png" alt="logo-site">
+            </div>
+            <div class="menu-content">
+                <div class="menu-list">
+                    <ul>
+                        <li><a href="homepage.html">Home |</a></li>
+                        <li><a href="seemore.html">Product |</a></li>
+                        <li><a href="#">About us |</a></li>
+                        <li><a href="#">Contact us |</a></li>
+                        <li><a href="#">Payment</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="checkout">
+        <div class="checkout-title">
+            <h1>Shopping Cart</h1>
+            <h1>You may also like: </h1>
+        </div>
+        <div class="main-container">
+            <div class="quantity-container">
+                <div class="quantity">
+                    <p>Lily</p>
+                    <input type="number" class="quantity-input" id="quantity-lily" name="quantity-lily" min="0" max="5" value="0">
+                </div>
+                <div class="quantity">
+                    <p>Tulips</p>
+                    <input type="number" class="quantity-input" id="quantity-tulips" name="quantity-tulips" min="0" max="5" value="0">
+                </div>
+                <div class="quantity">
+                    <p>Iris</p>
+                    <input type="number" class="quantity-input" id="quantity-iris" name="quantity-iris" min="0" max="5" value="0">
+                </div>
+                <div class="quantity">
+                    <p>Roses</p>
+                    <input type="number" class="quantity-input" id="quantity-roses" name="quantity-roses" min="0" max="5" value="0">
+                </div>
+                <div class="quantity">
+                    <p>Daisy</p>
+                    <input type="number" class="quantity-input" id="quantity-daisy" name="quantity-daisy" min="0" max="5" value="0">
+                </div>
+                <div class="total">
+                    <p>Total Quantity: <span id="total-quantity">0</span></p>
+                    <p>Total Price: ₱ <span id="total-price">0.00</span></p>
+                    <div class="checkout-button">
+                        <a href="#" id="checkout-btn">Check out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="plant-container">
+                <div class="product-item">
+                    <a href="carnation.html"><img src="./img/flower4.jpg" alt="flower"></a>
+                    <p>CARNATION</p>
+                </div>
+                <div class="product-item">
+                    <a href="iris.html"><img src="./img/flower13.webp" alt="flower"></a>
+                    <p>IRIS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+        <div id="checkout-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <button class="back-btn">Go Back</button>
+                <h2>PAYMENT METHOD</h2>
+                <div class="payment-options">
+                    <button class="payment-option">In shop</button>
+                    <button class="payment-option">Online</button>
+                </div>
+                <div class="payment-method">
+                    <select>
+                        <option value="gcash">GCash</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="credit-card">Credit Card</option>
+                    </select>
+                </div>
+                <p>Name: Nicole Navidad</p>
+                <p>GCash No: 09123456789</p>
+                <p>Amount to Transfer: <input id="transfer-amount" type="number" value="0.00" min="0" style="width: 100px;"> ₱</p>
+                <button class="buy-btn">Buy</button>
+                <p class="total-amount">Total of ₱ <span id="total-amount-bottom">0.00</span> + delivery fees</p>
+            </div>
+        </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log("JavaScript loaded");
+            const quantityInputs = document.querySelectorAll('.quantity-input');
+            const totalQuantityElement = document.getElementById('total-quantity');
+            const totalPriceElement = document.getElementById('total-price');
+            const checkoutBtn = document.getElementById('checkout-btn');
+            const modal = document.getElementById('checkout-modal');
+            const closeModal = document.querySelector('.modal .close');
+            const backBtn = document.querySelector('.back-btn');
+            const transferAmountInput = document.getElementById('transfer-amount');
+            const totalAmountBottomElement = document.getElementById('total-amount-bottom');
+            const pricePerPlant = 575.98;
+            const buyBtn = document.querySelector('.buy-btn');
+
+            function updateTotals() {
+                let totalQuantity = 0;
+                let totalPrice = 0;
+
+                quantityInputs.forEach(input => {
+                    const quantity = parseInt(input.value) || 0;
+                    totalQuantity += quantity;
+                    totalPrice += quantity * pricePerPlant;
+                });
+
+                totalQuantityElement.textContent = totalQuantity;
+                totalPriceElement.textContent = totalPrice.toFixed(2);
+                transferAmountInput.value = totalPrice.toFixed(2); // Update the transfer amount input with the calculated total price
+            }
+
+            quantityInputs.forEach(input => {
+                input.addEventListener('input', updateTotals);
+            });
+
+            // Initial calculation to set the default values
+            updateTotals();
+
+            checkoutBtn.addEventListener('click', () => {
+                totalAmountBottomElement.textContent = transferAmountInput.value; // Display the manually entered transfer amount
+                modal.style.display = 'block';
+            });
+
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+            backBtn.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+            window.addEventListener('click', (event) => {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            });
+
+            buyBtn.addEventListener('click', () => {
+                window.location.href = 'homepage.html'; // Replace '/success-page-url' with your actual success page URL
+            });
+        });
+
+
+    </script>
+</body>
+</html>

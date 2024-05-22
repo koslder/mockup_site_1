@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'open sans';
+        }
+
+        section.product {
+            background-color: #F6D6D6;
+            padding: 50px 20px 0px;
+        }
+        
+        .product-img {
+            display: flex;
+            justify-content: center;
+        }
+
+        .product-img img {
+            border: 5px solid black;
+            width: 370px;
+        }
+
+        .product-description p {
+            font-size: 21px;
+        }
+        .product-description {
+            width: 350px;
+            margin-left: 50px;
+        }
+
+        .product-item {
+            text-align: center;
+            position: relative;
+        }
+
+        .product-item p {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .cart-logo img {
+            border: unset;
+            width: 50px;
+            position: absolute;
+            right: 0;
+        }
+
+        .similar-container {
+            display: grid;
+            grid-auto-flow: column;
+            gap: 20px;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            overflow-x: auto;
+        }
+        .similar-container .product-item a img {
+            width: 250px;
+            height: 300px;
+            border: 2px solid black;
+        }
+
+        .similar-container .product-item p {
+            margin-top: 20px;
+        }
+
+        .similar-title h1 {
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="product">
+        <div class="product-container">
+            <div class="product-img">
+                <div class="product-item">
+                    <img src="./img/flower9.jpg" alt="tulips">
+                    <p>Tulips</p>
+                    <p>$9.99</p>
+                    <div class="cart-logo">
+                        <a href="cart.html"><img src="./img/cart-logo.png" alt="cart"></a>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <p>
+                        Tulips are known for their vibrant and colorful blooms, making them one of the world's most popular flowers. They are widely cultivated and cherished for their beauty and versatility.<br>
+                        <br>
+                        Tulips typically start emerging from the ground in late winter or early spring. They are quite cold-tolerant and can withstand freezing temperatures. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="similar-title">
+            <h1>Similar to this:</h1>
+        </div>
+        <div class="similar-container">
+            <div class="product-item">
+                <a href="roses.html"><img src="./img/flower2.jpg" alt="flower"></a>
+                <p>ROSES</p>
+            </div>
+            <div class="product-item">
+                <a href="daisy.html"><img src="./img/flower12.jpg" alt="flower"></a>
+                <p>DAISEY</p>
+            </div>
+            <div class="product-item">
+                <a href="chrysanthemum.html"><img src="./img/flower11.jpg" alt="flower"></a>
+                <p>CHRYSANTHEMUM</p>
+            </div>
+            <div class="product-item">
+                <a href="lilies.html"><img src="./img/flower1.webp" alt="flower"></a>
+                <p>LILIES</p>
+            </div>
+            <div class="product-item">
+                <a href="orchid.html"><img src="./img/flower3.webp" alt="flower"></a>
+                <p>ORCHID</p>
+            </div>
+            <div class="product-item">
+                <a href="tulips.html"><img src="./img/flower9.jpg" alt="flower"></a>
+                <p>TULIPS</p>
+            </div>
+            <div class="product-item">
+                <a href="carnation.html"><img src="./img/flower4.jpg" alt="flower"></a>
+                <p>CARNATION</p>
+            </div>
+            <div class="product-item">
+                <a href="iris.html"><img src="./img/flower13.webp" alt="flower"></a>
+                <p>IRIS</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans';
+        }
+
+        section.seemore-menu {
+            background-color: #0CC0DF;
+        }
+
+        .logo img {
+            border-radius: 50px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-start;
+            gap: 30px;
+            padding: 10px;
+        }
+
+        .input input {
+            width: 250px;
+            height: 25px;
+            padding-left: 35px; /* Adjust this value based on the icon's size */
+            border: 1px solid black;
+            border-radius: 7px;
+            background-color: #0CC0DF;
+            margin-right: 20px;
+        }
+
+        .input button {
+            margin-left: 30px;
+            border: none;
+            height: 40px;
+            width: 157px;
+            background: white;
+            font-size: 17px;
+        }
+
+        .menu-list ul li {
+            list-style: none;
+        }
+
+        .menu-list ul li a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        .menu-list ul {
+            display: flex;
+            justify-content: flex-start;
+            padding: 0;
+            gap: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .menu-title h1 {
+            font-size: 31px;
+        }
+
+        .menu-content {
+            width: 100%;
+            display: flex;
+            gap: 41px;
+            align-items: center;
+        }
+
+        .input {
+            display: flex;
+            position: relative; /* Added position relative */
+        }
+
+        .input .fa-search {
+            position: absolute;
+            left: 10px;
+            top: 43%;
+            transform: translateY(-50%);
+            color: #000;
+        }
+        .main-product .product-list ul {
+            list-style: none;
+            padding-bottom: 20px;
+        }
+
+        .main-product .product-list ul li {
+            display: inline-block;
+            margin-right: 15px;
+            position: relative;
+            background-color: white;
+            padding: 10px 40px;
+        }
+
+        .main-product .product-list ul li::after {
+            content: '\f0d7'; 
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        /* Main-product */
+        .main-product {
+            background-color: #7BD3EA;
+            overflow-x: auto;
+            white-space: nowrap;
+            /* padding: 20px; */
+            padding: 30px 20px;
+        }
+
+        .product-list-items {
+            display: grid;
+            grid-template-rows: repeat(2, auto);
+            grid-auto-flow: column;
+            gap: 20px;
+           
+        }
+
+        .product-item {
+            background-color: #7BD3EA;
+            text-align: center;
+        }
+
+        .product-item img {
+            width: 250px;
+            height: 250px;
+        }
+
+        .product-item p{
+            margin-top: 15px;
+        }
+        /* Main-product end */
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="seemore-menu">
+        <div class="menu">
+            <div class="logo">
+                <img src="./img/gk-logo.png" alt="logo-site">
+            </div>
+            <div class="menu-content">
+                <div class="menu-list">
+                    <ul>
+                        <li><a href="homepage.html">Home |</a></li>
+                        <li><a href="seemore.html">Product |</a></li>
+                        <li><a href="#">About us |</a></li>
+                        <li><a href="#">Contact us |</a></li>
+                        <li><a href="#">Payment</a></li>
+                    </ul>
+                </div>
+                <div class="input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                    <a href="cart.html"><img src="./img/cart-logo.png" alt="cart"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-product">
+        <div class="product-list">
+            <ul>
+                <li>Featured</li>
+                <li>Price</li>
+                <li>Flowers</li>
+                <li>Color</li>
+                <li>Fertilizes</li>
+            </ul>
+        </div>
+        <div class="product-list-items">
+            <div class="product-item">
+                <a href="roses.html"><img src="./img/flower2.jpg" alt="flower"></a>
+                <p>ROSES</p>
+            </div>
+            <div class="product-item">
+                <a href="daisy.html"><img src="./img/flower12.jpg" alt="flower"></a>
+                <p>DAISEY</p>
+            </div>
+            <div class="product-item">
+                <a href="chrysanthemum.html"><img src="./img/flower11.jpg" alt="flower"></a>
+                <p>CHRYSANTHEMUM</p>
+            </div>
+            <div class="product-item">
+                <a href="lilies.html"><img src="./img/flower1.webp" alt="flower"></a>
+                <p>LILIES</p>
+            </div>
+            <div class="product-item">
+                <a href="orchid.html"><img src="./img/flower3.webp" alt="flower"></a>
+                <p>ORCHID</p>
+            </div>
+            <div class="product-item">
+                <a href="tulips.html"><img src="./img/flower9.jpg" alt="flower"></a>
+                <p>TULIPS</p>
+            </div>
+            <div class="product-item">
+                <a href="carnation.html"><img src="./img/flower4.jpg" alt="flower"></a>
+                <p>CARNATION</p>
+            </div>
+            <div class="product-item">
+                <a href="iris.html"><img src="./img/flower13.webp" alt="flower"></a>
+                <p>IRIS</p>
+            </div>
+            <div class="product-item">
+                <a href="roses.html"><img src="./img/flower2.jpg" alt="flower"></a>
+                <p>ROSES</p>
+            </div>
+            <div class="product-item">
+                <a href="daisy.html"><img src="./img/flower12.jpg" alt="flower"></a>
+                <p>DAISEY</p>
+            </div>
+            <div class="product-item">
+                <a href="chrysanthemum.html"><img src="./img/flower11.jpg" alt="flower"></a>
+                <p>CHRYSANTHEMUM</p>
+            </div>
+            <div class="product-item">
+                <a href="lilies.html"><img src="./img/flower1.webp" alt="flower"></a>
+                <p>LILIES</p>
+            </div>
+            <div class="product-item">
+                <a href="orchid.html"><img src="./img/flower3.webp" alt="flower"></a>
+                <p>ORCHID</p>
+            </div>
+            <div class="product-item">
+                <a href="tulips.html"><img src="./img/flower9.jpg" alt="flower"></a>
+                <p>TULIPS</p>
+            </div>
+            <div class="product-item">
+                <a href="carnation.html"><img src="./img/flower4.jpg" alt="flower"></a>
+                <p>CARNATION</p>
+            </div>
+            <div class="product-item">
+                <a href="iris.html"><img src="./img/flower13.webp" alt="flower"></a>
+                <p>IRIS</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
