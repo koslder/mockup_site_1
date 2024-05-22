@@ -186,6 +186,69 @@
             color: #0000FF;
             font-weight: 500;
         }
+        .title h1 {
+            font-size: 50px;
+            }
+            .title {
+            text-align: center;
+            }
+            .title h2 {
+            text-decoration: underline;
+            }
+            .product-img img {
+            width: 158px;
+            height: 220px;
+            border: 5px solid white;
+            }   
+            .mainproduct {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-between;
+            gap: 15px;
+            align-items: center;
+            text-align: center;
+            background: lightcyan;
+            }
+            .seemore-button a {
+            padding: 10px;
+            background-color: lightgrey;
+            font-size: 20px;
+            font-weight: 900;
+            color: #055f85;
+            border: 2px solid darkblue;
+            }
+            section.product {
+            background: rgb(105, 195, 255);
+            position: relative;
+            }
+            .upcoming-events {
+            width: 350px;
+            text-align: center;
+            }
+            .upcoming-events {
+            padding: 20px 30px;
+            width: 350px;
+            text-align: center;
+            background: mediumseagreen;
+            }
+            .gardening {
+            display: flex;
+            gap: 30px;
+            flex-direction: row;
+            align-content: stretch;
+            align-items: center;
+            justify-content: center;
+            }
+            .gardening-tips {
+            text-align: center;
+            font-size: 20px;
+            }
+            .title a {
+            position: absolute;
+            right: 0;
+            top: 54px;
+            }
         /* About us end*/
     </style>
 
@@ -234,6 +297,69 @@
     </div>
 </section>
 <!--  -->
+<section class = 'product'>
+    <div class = 'title'>
+        <h1>Products</h1>
+        <h2>Newest / Popular</h2>
+        <a href=""><img src="./img/icons8-cart-48.png" alt=""></a>
+    </div>
+   <div class="mainproduct">
+        <div class="product-item">
+            <div class="product-img">
+                <img src="./img/flower2.jpg" alt="pottedroses">
+            </div>
+            <div class="product-description">
+                <p>Php 250.00</p>
+                <h1>POTTED ROSES</h1>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-img">
+                <img src="./img/flower11.jpg" alt="pottedroses">
+            </div>
+            <div class="product-description">
+                <p>Php 700.00</p>
+                <h1>CHRYSANTHEMUM</h1>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-img">
+                <img src="./img/flower3.webp" alt="pottedroses">
+            </div>
+            <div class="product-description">
+                <p>Php 450.00</p>
+                <h1>ORCHID</h1>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-img">
+                <img src="./img/flower4.jpg" alt="pottedroses">
+            </div>
+            <div class="product-description">
+                <p>Php 550.00</p>
+                <h1>CARNATION</h1>
+            </div>
+        </div>
+        <div class="seemore-button">
+            <a href="https://search.brave.com/images?q=potted+roses+red&source=web">see more >></a>
+        </div>
+   </div>
+   <div class="gardening">
+        <div class="upcoming-events">
+            <h2>UPCOMING EVENTS:</h2>
+            <p>Wait for our anniversary event this coming June!
+                Buy more and have a big discount for loyal customers!
+                Also we have free delivery within the city
+            </p>
+        </div>
+        <div class="gardening-tips">
+            <p>VIDEO TIPS <br>FOR GARDENING:</p>
+        </div>
+        <div class="video-gardening">
+            <iframe width="300" height="150" src="https://www.youtube.com/embed/BO8yuSTc3fo" title="Gardening for Beginners Series:  Gardening Basics for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+   </div>
+</section>
 <section class="aboutus">
     <div class="about-container">
         <div class="title">
